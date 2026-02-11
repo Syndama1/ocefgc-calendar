@@ -1,0 +1,57 @@
+[
+  {
+    "name": "RMIT Games Day 27",
+    "date": "TBD",
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 18",
+    "fee": {
+        "cost": 5,
+        "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/tournament/rmit-games-day-26/details"
+  },
+  {
+    "name": "The Game Expo",
+    "date": "March 14th - 15th",
+    "state": "VIC",
+    "location": "Melbourne Convention and Exhibition Centre",
+    "fee": {
+        "cost": 47.43,
+        "notes": "Single Day Price"
+    },
+    "signupLink": "start.gg/tournament/the-game-expo-2026-fgc-fighting-games-tournament/details"
+  },
+  {
+    "name": "The Wild West",
+    "date": "March 27th - 29th",
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+        "cost": 10,
+        "notes": "Single Day Price"
+    },
+    "signupLink": "start.gg/tournament/the-wild-west-2026/details"
+  },
+  {
+    "name": "York Street Battles 115",
+    "date": "TBD",
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+        "cost": 5,
+        "notes": ""
+    },
+    "signupLink": "start.gg/ysb"
+  },
+  {
+    "name": "Battle Arena Melbourne 16",
+    "date": "May 29th - 31st, 2026",
+    "state": "VIC",
+    "location": "Bundha Sports Centre",
+    "fee": {
+        "cost": 60,
+        "notes": "Early Bird Price Until April 4th"
+    },
+    "signupLink": "start.gg/bam16"
+  }
+]

@@ -1,0 +1,303 @@
+<body>
+    <div class="title"></div>
+    <div class="event-body">
+        <div class="name" id="name"></div>
+        <div class="location" id="location"></div>
+        <div class="date-wrapper" id="date-wrapper">
+            <div class="date" id="date">Date:</div>
+            <div class="date-text" id="date-text"></div>
+        </div>
+        <div class="fee" id="fee">
+            <div class="fee-price" id="fee-price"></div>
+            <div class="fee-notes" id="fee-notes"></div>
+        </div>
+        <div class="signup" id="signup">
+            <div class="link" id="signup-link"></div>
+            <div class="qr" id="qrcode"></div>
+        </div>
+    </div>
+
+    <div class="controls" id="controls">
+        <button class="button" id="previous" onclick="PrevEvent()">
+            <div>Previous</div>
+        </button>
+        <div class="current" id="current">1/1</div>
+        <button class="button" id="next" onclick="NextEvent()">
+            <div>Next</div>
+        </button>
+    </div>
+
+    <canvas id="canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
+</body>
+<style>
+    @font-face {
+        font-family: 'Shapiro 75 Heavy Text';
+        src: url('shapiro/Shapiro-75HeavyText.woff2') format('woff2'),
+            url('shapiro/Shapiro-75HeavyText.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Shapiro 95 Super Extd';
+        src: url('shapiro/Shapiro-95SuperExtd.woff2') format('woff2'),
+            url('shapiro/Shapiro-95SuperExtd.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Shapiro 35 Feather Text';
+        src: url('shapiro/Shapiro-35FeatherText.woff2') format('woff2'),
+            url('shapiro/Shapiro-35FeatherText.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    body {
+        margin: 0px;
+        
+        background-color: #1B1D1F;
+    }
+
+    div#name.name {
+        font-family: 'Shapiro 95 Super Extd';
+        font-size: 80px;
+    }
+    
+    .controls {
+        font-family: 'Shapiro 75 Heavy Text';
+        color: #f1f2f1;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .current {
+        text-align: center;
+        width: 75px;
+    }
+
+    .controls > .button {
+        font-family: 'Shapiro 75 Heavy Text';
+        color: #f1f2f1;
+        text-align: center;
+        padding: 30px 15px;
+        outline: #0f1011 solid 2px;
+        border: none;
+        border-radius: 8px;
+        background-color: #1B1D1F;
+    }
+
+    .button > div {
+        font-size: 15px;
+        max-width: 120px;
+        width: 80px;
+    }
+
+    .controls > .button:hover {
+        background-color: #272a2c;
+    }
+
+    .controls > .button:active {
+        background-color: #1B1D1F;
+    }
+
+    .controls > .current {
+        font-size: 30px;
+        margin: 0px 20px;
+        font-family: 'Shapiro 95 Super Extd';
+    }
+
+    .date-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .date {
+        font-size: 20px;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        font-family: 'Shapiro 35 Feather Text';
+    }
+
+    .date-text > .date {
+        font-size: 50px;
+    }
+
+    .fee {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fee > .fee-price {
+        margin-left: auto;
+    }
+
+    .fee > .fee-notes {
+        margin-top: auto;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        font-family: 'Shapiro 35 Feather Text';
+        font-size: 20px;
+    }
+
+    .link {
+        font-family: 'Shapiro 35 Feather Text';
+        font-size: 1vw;
+    }
+
+    .qr {
+        margin-top: 2%;
+        margin-left: auto;
+        width: 384;
+        background-color: #1B1D1F;
+    }
+
+    .event-body {
+        text-align: right;
+        font-size: 50px;
+        padding: 30px;
+    }
+
+    .event-body > div {
+        color: #f1f2f1;
+        font-family: 'Shapiro 75 Heavy Text'; 
+        padding: 15px 30px;
+    }
+
+    
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+
+    //import eventsData from './events.json' with { type: 'json' };
+    var eventsData;
+
+    currentEventIndex = 0;
+
+    fetch("events.json")
+        .then((res) => res.text())
+        .then((text) => {
+            eventsData = JSON.parse(text);
+            
+            UpdateDisplay();
+            
+            document.getElementById("current").innerHTML = "1/" + eventsData.length;
+        })
+        .catch((e) => console.error(e));
+
+    function NextEvent() {
+        if(currentEventIndex == (eventsData.length - 1)) 
+        {
+            return;
+        }
+
+        currentEventIndex += 1;
+        document.getElementById("current").innerHTML = (currentEventIndex + 1) + "/" + eventsData.length;
+
+        UpdateDisplay();
+    }
+
+    function PrevEvent() {
+        if(currentEventIndex == 0)
+        {
+            return;
+        } 
+
+        currentEventIndex -= 1;
+        document.getElementById("current").innerHTML = (currentEventIndex + 1) + "/" + eventsData.length;
+
+        UpdateDisplay();
+    }
+
+    function UpdateDisplay() {
+        document.getElementById("name").innerHTML = eventsData[currentEventIndex].name;
+        document.getElementById("location").innerHTML = eventsData[currentEventIndex].location + ", " + eventsData[currentEventIndex].state;
+        document.getElementById("date-text").innerHTML = eventsData[currentEventIndex].date;
+        document.getElementById("fee-price").innerHTML = "$" + eventsData[currentEventIndex].fee.cost;
+        document.getElementById("fee-notes").innerHTML = eventsData[currentEventIndex].fee.notes;
+        document.getElementById("signup-link").innerHTML = eventsData[currentEventIndex].signupLink;
+        UpdateQRCode("https://www." + eventsData[currentEventIndex].signupLink);
+    }
+
+    function UpdateQRCode(url) {
+        document.getElementById("qrcode").innerHTML = "";
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: url,
+        width: 384,
+        height: 384,
+        colorDark : "#f1f2f1",
+        colorLight : "#1B1D1F",
+        correctLevel : QRCode.CorrectLevel.H // Error correction level (L, M, Q, H)
+    });
+    }
+
+    
+
+    //#region THREEjs Background
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    const renderer = new THREE.WebGLRenderer({
+        alpha: true,
+        antialias: true,
+        canvas: canvas
+    });
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+    const geometry = new THREE.SphereGeometry(7, 32, 32);
+
+    const sphereMaterial = new THREE.MeshBasicMaterial( { color: 0x1B1D1F } );
+    const sphere = new THREE.Mesh( geometry, sphereMaterial );
+
+    const wireframeGeometry = new THREE.WireframeGeometry(geometry);
+    const material = new THREE.LineBasicMaterial({
+        color: 0xcdf564
+    });
+    const wireframe = new THREE.LineSegments(wireframeGeometry, material);
+
+    const group = new THREE.Group();
+
+    group.add(wireframe);
+    group.add(sphere);
+    scene.add(group);
+
+    camera.position.z = 10;
+    camera.position.x = 4;
+    camera.position.y = 3.5;
+    group.rotation.z = THREE.MathUtils.degToRad(-15);
+    group.rotation.x = THREE.MathUtils.degToRad(-50);
+
+    function animate() {
+        sphere.rotation.y += 0.0005;
+        wireframe.rotation.y = sphere.rotation.y;
+        renderer.render( scene, camera );
+    }
+    renderer.setAnimationLoop( animate );
+
+    function onWindowResize() {
+        // 1. Update the camera's aspect ratio
+        camera.aspect = window.innerWidth / window.innerHeight;
+        // 2. Update the camera's projection matrix to apply the change
+        camera.updateProjectionMatrix();
+
+        // 3. Update the renderer's size
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    window.addEventListener('resize', onWindowResize, false);
+
+    //#endregion
+
+</script>
