@@ -1,6 +1,9 @@
+<head>
+    <title>2XKOCE Calendar - February</title>
+</head>
 <body>
     <div class="title"></div>
-    <div class="event-body">
+    <div class="event-body show" id="event-body">
         <div class="name" id="name"></div>
         <div class="location" id="location"></div>
         <div class="date-wrapper" id="date-wrapper">
@@ -12,24 +15,70 @@
             <div class="fee-notes" id="fee-notes"></div>
         </div>
         <div class="signup" id="signup">
-            <div class="link" id="signup-link"></div>
+            <a target="_blank" rel="noopener noreferrer">
+                <div class="link" id="signup-link"></div>
+            </a>
             <div class="qr" id="qrcode"></div>
         </div>
     </div>
 
-    <div class="controls" id="controls">
-        <button class="button" id="previous" onclick="PrevEvent()">
-            <div>Previous</div>
-        </button>
-        <div class="current" id="current">1/1</div>
-        <button class="button" id="next" onclick="NextEvent()">
-            <div>Next</div>
+    
+    <div class="navigation left desktop-only" id="previous">
+        <button class="button chevron left" onclick="PrevEvent()"></button>
+        <button class="button double-chevron left" onclick="PrevMonth()">
+            <div></div>
+            <div></div>
         </button>
     </div>
+    <div class="navigation right desktop-only" id="next">
+        <button class="button chevron right" onclick="NextEvent()"></button>
+        <button class="button double-chevron right" onclick="NextMonth()">
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    
 
-    <canvas id="canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
+    <div class="sidenav" id="sidenav">
+        <a class="closebtn" onclick="closeSideNav()">&times;</a>
+        <div></div>
+        <a class="sidenav-option" onclick="GoToToday(); closeSideNav()">Today</a>
+        <div class="dropdown" id="dropdown">
+            <button class="dropbtn" onclick="OpenDropdown('month-select')">Pick Month</button>
+            <div class="dropdown-content" id="month-select">
+                <a onclick="UpdateTimeline(1); closeSideNav()">January</a>
+                <a onclick="UpdateTimeline(2); closeSideNav()">February</a>
+                <a onclick="UpdateTimeline(3); closeSideNav()">March</a>
+                <a onclick="UpdateTimeline(4); closeSideNav()">April</a>
+                <a onclick="UpdateTimeline(5); closeSideNav()">May</a>
+                <a onclick="UpdateTimeline(6); closeSideNav()">June</a>
+                <a onclick="UpdateTimeline(7); closeSideNav()">July</a>
+                <a onclick="UpdateTimeline(8); closeSideNav()">August</a>
+                <a onclick="UpdateTimeline(9); closeSideNav()">September</a>
+                <a onclick="UpdateTimeline(10); closeSideNav()">October</a>
+                <a onclick="UpdateTimeline(11); closeSideNav()">November</a>
+                <a onclick="UpdateTimeline(12); closeSideNav()">December</a>
+            </div>
+        </div>
+        <a href="https://discord.gg/rRhmTGP3zt" class="sidenav-option">Discord</a>
+    </div>
+
+    <div class="sidenav-open" id="sidenav-open" onclick="openSideNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="timeline desktop-only" id="timeline"></div>
+
+    <div class="month-indicator desktop-only" id="month-indicator"></div>
+
+    <canvas id="canvas" style="position: fixed; top: 0; left: 0; z-index: -5;"></canvas>
 </body>
 <style>
+
+    /* #region Boilerplate */
+
     @font-face {
         font-family: 'Shapiro 75 Heavy Text';
         src: url('shapiro/Shapiro-75HeavyText.woff2') format('woff2'),
@@ -57,63 +106,386 @@
         font-display: swap;
     }
 
+    /* #endregion */
+
     body {
         margin: 0px;
-        
+        overflow-x: hidden;
         background-color: #1B1D1F;
     }
 
-    div#name.name {
-        font-family: 'Shapiro 95 Super Extd';
+    @media screen and (aspect-ratio <= 4/3) {
+        div.desktop-only {
+            display: none;
+        }
+    }
+
+    .hide {
+        opacity: 0; 
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    /* #region Month Picker */
+
+    .dropbtn {
+        width: 100%;
+        min-width: 400px;
+        height: 50px;
+        background-color: inherit;
+        border: none;
+        color: #f1f2f1;
+        text-align: inherit;
+        font-size: 25px;
+        font-family: 'Shapiro 75 Heavy Text';
+        padding: 8px 8px 8px 32px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .dropbtn:hover {
+        color: #3b3e41;
+        margin-left: 10px;
+    }
+
+    .dropdown#dropdown {
+        height: 0px;
+        min-height: 50px;
+        transition: height 1s ease-in-out;
+        overflow: hidden;
+    }
+
+    .dropdown-content.show-dropdown {
+        display: block;
+    }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        background-color: #0f1011;
+        width: 100%;
+        transition: margin-right;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    .dropdown-content > a:hover {
+        margin-right: 10px;
+    }
+
+    /* #endregion */
+
+    /* #region Sidenav */
+
+    .sidenav {
+        height: 100%;
+        width: 0px;
+        position: fixed; 
+        z-index: 10; 
+        top: 0; 
+        left: 0;
+        background-color: #0f1011; 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s; 
+    }
+
+    .sidenav-open {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        cursor: pointer;
+    }
+
+    .sidenav-open > div {
+        width: 35px;
+        height: 5px;
+        background-color: #f1f2f1;
+        margin: 6px 0;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 40px;
         font-size: 80px;
+        text-decoration: none;
+        color: #f1f2f1;
+        padding-right: 0px;
+    }
+
+    .sidenav > div {
+        height: 50px;
+    }
+
+    .sidenav a {
+        font-family: 'Shapiro 75 Heavy Text';
+        padding: 8px 32px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f1f2f1;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .sidenav a:hover {
+        color: #3b3e41;
+        margin-left: 10px;
+    }
+
+    /* #endregion */
+
+    /* #region Timeline */
+
+    .month-indicator {
+        max-width: 100vw; 
+        overflow: hidden; 
+        font-size: clamp(0px, 10vw, 150px); 
+        position: absolute; 
+        bottom: 0; 
+        font-family: 'Shapiro 95 Super Extd'; 
+        z-index: -1; 
+        color: #0f1011; 
+        opacity: 0.8; 
+        left: 50%; 
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        transition: opacity 0.1s ease-in-out;
+    }
+
+    .timeline {
+        position: absolute;
+        bottom: 0%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100vw;
+        transition: opacity 0.1s ease-in-out;
     }
     
-    .controls {
-        font-family: 'Shapiro 75 Heavy Text';
-        color: #f1f2f1;
-        position: absolute;
-        left: 50%;
-        bottom: 5%;
-        transform: translateX(-50%);
+    .day-container {
+        bottom: 0%;
+        position: relative;
+        height: auto;
+        z-index: 0;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column-reverse;
+        transform: skew(-15deg);
     }
 
-    .current {
-        text-align: center;
-        width: 75px;
+    .day {
+        width: 3vw;
+        height: 4.5vh;
+        background-color: #1B1D1F;
+        border: solid #0f1011 4px;
+        border-left: 0px;
+        box-sizing: border-box;
+        bottom: 0;
+        color: #3b3e41;
+        font-family: 'Shapiro 75 Heavy Text';
+        padding: 2px;
+        white-space: normal;
+        margin-top: 2px;
     }
 
-    .controls > .button {
+    .day.first {
+        border-left: solid #0f1011 4px;
+    }
+
+    .day.today {
+        color: #f1f2f1;
+    }
+
+    .timeline-event:hover {
+        transform: scale(120%) translateX(-3px);
+        cursor: pointer;
+    }
+
+    .timeline-event {
+        height: 30px;
+        width: 1000%;
+        font-family: 'Shapiro 95 Super Extd';
+        max-width: 3vw;
+        padding: 0px;
+        color: #f1f2f1;
+        border: none;
+        background-color: rgba(241, 242, 241, 0.2);
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: 1px;
+        z-index: 9;
+        transform: translateX(-3px);
+        transition: transform 0.1s ease-in-out; 
+        font-size: clamp(7px, 0.75vw, 13px);
+    }
+
+    .blank {
+        color: transparent;
+        background-color: transparent;
+        border: none;
+        z-index: -100;
+        height: 30px;
+        width: 1000%;
+        font-family: 'Shapiro 95 Super Extd';
+        max-width: 3vw;
+        padding: 0px;
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: 1px;
+        transform: translateX(-3px);
+        transition: transform 0.1s ease-in-out;  
+    }
+
+    .timeline-event.blank:hover {
+        transform: scale(120%) translateX(-3px);
+        cursor: default;
+    }
+
+    .NSW {
+        background-color: rgba(43, 227, 150, 0.2);
+        color: #2be396;
+        border-color: #2be396;
+    }
+
+    .VIC {
+        background-color: rgba(66, 135, 245, 0.2);
+        color: #4287f5;
+        border-color: #4287f5;
+    }
+
+    .WA {
+        background-color: rgba(240, 69, 60, 0.2);
+        color: #f0453c;
+        border-color: #f0453c;
+    }
+
+    /* #endregion */
+    
+    /* #region Navigation */
+
+    .navigation {
         font-family: 'Shapiro 75 Heavy Text';
         color: #f1f2f1;
         text-align: center;
-        padding: 30px 15px;
-        outline: #0f1011 solid 2px;
+        padding: 25px 20px;
         border: none;
-        border-radius: 8px;
-        background-color: #1B1D1F;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    .button > div {
+    .button {
         font-size: 15px;
-        max-width: 120px;
-        width: 80px;
+        border: none;
+        transition: transform 0.2s;
+        cursor: pointer;
     }
 
-    .controls > .button:hover {
-        background-color: #272a2c;
+    .button.chevron {
+        width: 25px;
+        height: 50px;
     }
 
-    .controls > .button:active {
-        background-color: #1B1D1F;
+    .double-chevron {
+        width: 25px;
+        height: 20px;
     }
 
-    .controls > .current {
-        font-size: 30px;
-        margin: 0px 20px;
+    .button:hover {
+        transform: scale(120%);
+    }
+
+    .button:active {
+        transform: scale(110%);
+    }
+
+    .navigation.left {
+        left: 0;
+    }
+
+    .navigation.right {
+        right: 0%;
+    }
+
+    .chevron.left {
+        --s: 15px; /* control the shape (can be percentage) */
+
+        aspect-ratio: 3/5;
+        clip-path: polygon(100% 0,calc(100% - var(--s)) 0,0 50%,calc(100% - var(--s)) 100%,100% 100%,var(--s) 50%);
+        background: #f1f2f1;
+    }
+
+    .double-chevron.left {
+        background: transparent;
+        flex-direction: row;
+        display: flex;
+        padding: 0px;
+        margin-bottom: 10px;
+        margin-left: 6px;
+    }
+
+    .double-chevron.left > div {
+        --s: 7px; /* control the shape (can be percentage) */
+
+        height: 100%;
+        aspect-ratio: 3/5;
+        clip-path: polygon(100% 0,calc(100% - var(--s)) 0,0 50%,calc(100% - var(--s)) 100%,100% 100%,var(--s) 50%);
+        background: #f1f2f1;
+    }
+
+    .chevron.right {
+        --s: 15px; /* control the shape (can be percentage) */
+
+        aspect-ratio: 3/5;
+        clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+        background: #f1f2f1;
+    }
+    
+    .double-chevron.right {
+        background: transparent;
+        flex-direction: row;
+        display: flex;
+        padding: 0px;
+        margin-bottom: 10px;
+        margin-right: 6px;
+    }
+
+    .double-chevron.right > div {
+        --s: 7px; /* control the shape (can be percentage) */
+
+        height: 100%;
+        aspect-ratio: 3/5;
+        clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+        background: #f1f2f1;
+    }
+
+    /* #endregion */
+
+    /* #region Information */
+
+    #name.name {
         font-family: 'Shapiro 95 Super Extd';
+        font-size: 64px;
+        padding-left: 100px;
+    }
+
+    .event-body {
+        text-align: right;
+        font-size: 38px;
+        padding: 30px 40px;
+        transition: opacity 0.2s ease-in-out; 
+    }
+
+    .event-body > div {
+        color: #f1f2f1;
+        font-family: 'Shapiro 75 Heavy Text'; 
+        padding: 15px 30px;
     }
 
     .date-wrapper {
@@ -151,99 +523,327 @@
         font-size: 20px;
     }
 
+    .signup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup > a {
+        text-decoration: underline #f1f2f1;
+        margin-left: auto;
+    }
+
     .link {
         font-family: 'Shapiro 35 Feather Text';
-        font-size: 1vw;
+        font-size: 2vh;
+        color: #f1f2f1;
+        margin-left: auto;
     }
 
     .qr {
         margin-top: 2%;
         margin-left: auto;
-        width: 384;
+        max-width: 30vh;
         background-color: #1B1D1F;
     }
 
-    .event-body {
-        text-align: right;
-        font-size: 50px;
-        padding: 30px;
+    .qr > img {
+        max-width: 100%;
+        height: auto;
     }
 
-    .event-body > div {
-        color: #f1f2f1;
-        font-family: 'Shapiro 75 Heavy Text'; 
-        padding: 15px 30px;
-    }
-
+    /* #endregion */
     
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 
+    //#region Dropdown
+
+    var currentDropdown;
+
+    function OpenDropdown(dropdownID) {
+        if(document.getElementById(dropdownID).parentElement.style.height == "560px") {
+            return;
+        }
+        document.getElementById(dropdownID).classList.toggle("show-dropdown");
+        document.getElementById(dropdownID).parentElement.style.height = "560px";
+        currentDropdown = dropdownID;
+    }
+
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show-dropdown')) {
+                    openDropdown.classList.remove('show-dropdown');
+                }                
+            }
+            var dropdowns = document.getElementsByClassName("show-dropdown");
+            if (dropdowns.length == 0) {
+                document.getElementById("dropdown").style.height = "0px";
+            }
+        }
+    }
+
+    //#endregion
+
+    //#region Timeline Management
+
     //import eventsData from './events.json' with { type: 'json' };
-    var eventsData;
+    var eventsData = [];
 
-    currentEventIndex = 0;
+    const today = new Date();
+    const todayTimecode = ((today.getMonth() + 1) * 100) + today.getDate();
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    const daysOfWeek = [
+        "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"
+    ];
 
+    var currentEventIndex = 0;
+    var currentEventTimecode;
+    var currentMonth = today.getMonth() + 1;
+    var soonestEventIndex;
+
+    var soonestEventLockout = false;
     fetch("events.json")
         .then((res) => res.text())
         .then((text) => {
-            eventsData = JSON.parse(text);
-            
+            JSON.parse(text).forEach(event => {
+                if(event.show) {
+                    eventsData.push(event);
+                }
+            });
+
+            eventsData.sort((a, b) => a.date - b.date || b.duration - a.duration);
+
+            eventsData.forEach((event, index) => {
+                if ((event.date >= todayTimecode) && !soonestEventLockout) {
+                    soonestEventIndex = currentEventIndex = index;
+                    currentEventTimecode = event.date;
+                    soonestEventLockout = true;
+                }
+            });
+
             UpdateDisplay();
-            
-            document.getElementById("current").innerHTML = "1/" + eventsData.length;
+            UpdateTimeline(currentMonth);
         })
         .catch((e) => console.error(e));
 
+    function GoToToday() {
+        currentEventIndex = soonestEventIndex;
+
+        UpdateDisplay();
+        UpdateTimeline(today.getMonth() + 1);
+    }
+
+    var displayedMonth = 0;
+
+    function UpdateTimeline(month) {
+        // var currentMonth = [];
+        var timelineDOM = document.getElementById("timeline");
+        
+        if (month == displayedMonth) { return; }
+
+        timelineDOM.style.opacity = 0;
+        document.getElementById("month-indicator").style.opacity = 0;
+
+        setTimeout(() => {
+
+            document.getElementById("month-indicator").innerHTML = months[month - 1];
+            document.title = months[month - 1] + " - 2XKOCE Calendar";
+
+            timelineDOM.innerHTML = "";
+
+            for (i = 0; i < (new Date(today.getFullYear(), month, 0).getDate()); i++) {
+                var newDayDOM = document.createElement('div');
+                newDayDOM.classList.add('day-container');
+                newDayDOM.id = "day-" + (i + 1);
+                var newDayContentDOM = document.createElement('div');
+                newDayContentDOM.classList.add('day');
+                if (i == 0) { newDayContentDOM.classList.add('first'); }
+
+                if ((month - 1) == today.getMonth()) {
+                    if ((i + 1) == today.getDate()) {
+                        newDayContentDOM.classList.add("today");
+                    }
+                }
+
+                var dayOfTheWeek = new Date(today.getFullYear(), month - 1, i).getDay();
+                newDayContentDOM.innerHTML = i + 1 + "<div style='font-size: clamp(8px, 0.75vw, 12px);'>" + daysOfWeek[dayOfTheWeek] + "</div>";
+                newDayDOM.appendChild(newDayContentDOM);
+                timelineDOM.appendChild(newDayDOM);
+            }
+
+            eventsData.forEach((event, index) => {
+                if (Math.floor(event.date / 100) == month) {
+                    // currentMonth.push(event);
+                    var eventTimelineElement = document.createElement('button');
+                    eventTimelineElement.classList.add('timeline-event');
+                    eventTimelineElement.onclick = function() {
+                        ShowEventDetails(index, event.name, event.date);
+                    }
+                    eventTimelineElement.title = event.name;
+                    eventTimelineElement.classList.add(event.state);
+                    eventTimelineElement.id = event.name + event.date;
+                    eventTimelineElement.innerHTML = event.state;
+                    if(event.duration > 1) {
+                        eventTimelineElement.style = "max-width: " + (event.duration * 3) + "vw;";
+
+                        for (i = 1; i < event.duration; i++) {
+                            var blankDay = document.createElement('button');
+                            blankDay.classList.add('blank');
+                            document.getElementById('day-' + ((event.date + i) % 100)).appendChild(blankDay);
+                        }
+                    }
+                    document.getElementById('day-' + (event.date % 100)).appendChild(eventTimelineElement);
+                }
+            });
+
+            timelineDOM.append(...Array.from(timelineDOM.childNodes).reverse());
+
+            displayedMonth = month;
+            timelineDOM.style.opacity = 1;
+            document.getElementById("month-indicator").style.opacity = 1;
+
+        }, 100);
+    }
+
+    const formatOrdinal = (n, locale = 'en-US') => {
+        const pr = new Intl.PluralRules(locale, { type: 'ordinal' });
+        const suffixes = new Map([
+            ['one', 'st'],
+            ['two', 'nd'],
+            ['few', 'rd'],
+            ['other', 'th'],
+        ]);
+        const rule = pr.select(n);
+        const suffix = suffixes.get(rule);
+        return `${n}${suffix}`;
+    };
+
+    //#endregion
+
+    //#region Event Display
+
+    function ShowEventDetails(eventIndex, eventName, eventDate) {
+        GoToEvent(eventIndex, eventDate);
+    }
+
+    function GoToEvent(eventIndex, eventName, eventDate) {
+        if (eventIndex == currentEventIndex) { return; }
+        currentEventIndex = eventIndex;
+
+        UpdateDisplay();
+    }
+
     function NextEvent() {
         if(currentEventIndex == (eventsData.length - 1)) 
-        {
             return;
-        }
 
         currentEventIndex += 1;
-        document.getElementById("current").innerHTML = (currentEventIndex + 1) + "/" + eventsData.length;
 
         UpdateDisplay();
     }
 
     function PrevEvent() {
         if(currentEventIndex == 0)
-        {
             return;
-        } 
 
         currentEventIndex -= 1;
-        document.getElementById("current").innerHTML = (currentEventIndex + 1) + "/" + eventsData.length;
 
         UpdateDisplay();
     }
 
+    function NextMonth() {
+        if(currentMonth == 12)
+            return;
+
+        currentMonth += 1;
+        UpdateTimeline(currentMonth);
+    }
+
+    function PrevMonth() {
+        if(currentMonth == 1)
+            return;
+
+        currentMonth -= 1;
+        UpdateTimeline(currentMonth);
+    }
+
     function UpdateDisplay() {
-        document.getElementById("name").innerHTML = eventsData[currentEventIndex].name;
-        document.getElementById("location").innerHTML = eventsData[currentEventIndex].location + ", " + eventsData[currentEventIndex].state;
-        document.getElementById("date-text").innerHTML = eventsData[currentEventIndex].date;
-        document.getElementById("fee-price").innerHTML = "$" + eventsData[currentEventIndex].fee.cost;
-        document.getElementById("fee-notes").innerHTML = eventsData[currentEventIndex].fee.notes;
-        document.getElementById("signup-link").innerHTML = eventsData[currentEventIndex].signupLink;
-        UpdateQRCode("https://www." + eventsData[currentEventIndex].signupLink);
+        var previousEventTimecode = currentEventTimecode;
+        currentEventTimecode = eventsData[currentEventIndex].date;
+
+        if((Math.floor(currentEventTimecode / 100) - Math.floor(previousEventTimecode / 100)) != 0) {
+            currentMonth = Math.floor(currentEventTimecode / 100);
+            UpdateTimeline(currentMonth);
+        }
+
+        document.getElementById("event-body").classList.add("hide");
+        document.getElementById("event-body").classList.remove("show");
+
+        setTimeout(() => {
+            document.getElementById("name").innerHTML = eventsData[currentEventIndex].name;
+            document.getElementById("location").innerHTML = eventsData[currentEventIndex].location + ", " + eventsData[currentEventIndex].state;
+
+            if(eventsData[currentEventIndex].date == 0)
+            {
+                document.getElementById("date-text").innerHTML = "TBD";
+            } else 
+            {
+                if (eventsData[currentEventIndex].duration != 1) {
+                    document.getElementById("date-text").innerHTML = months[Math.floor(eventsData[currentEventIndex].date / 100) - 1] + " " + formatOrdinal(eventsData[currentEventIndex].date % 100) + " - " + formatOrdinal((eventsData[currentEventIndex].date % 100) + eventsData[currentEventIndex].duration - 1);
+                } else {
+                    document.getElementById("date-text").innerHTML = months[Math.floor(eventsData[currentEventIndex].date / 100) - 1] + " " + formatOrdinal(eventsData[currentEventIndex].date % 100);
+                }
+                        
+            }
+
+            document.getElementById("fee-price").innerHTML = "$" + eventsData[currentEventIndex].fee.cost;
+            if (eventsData[currentEventIndex].fee.notes != "")
+            {
+                document.getElementById("fee-notes").style = ""
+            } else {
+                document.getElementById("fee-notes").style = "margin-left: 0px;";
+            }
+            
+            document.getElementById("fee-notes").innerHTML = eventsData[currentEventIndex].fee.notes;
+            document.getElementById("signup-link").innerHTML = eventsData[currentEventIndex].signupLink;
+            document.getElementById("signup-link").parentElement.href = "https://www." + eventsData[currentEventIndex].signupLink;
+
+            
+            document.getElementById("qrcode").innerHTML = "";
+            if(eventsData[currentEventIndex].signupLink != "")
+            {
+                UpdateQRCode("https://www." + eventsData[currentEventIndex].signupLink);
+            }
+
+            
+            document.getElementById("event-body").classList.remove("hide");
+            document.getElementById("event-body").classList.add("show");
+
+        }, 200);
     }
 
     function UpdateQRCode(url) {
-        document.getElementById("qrcode").innerHTML = "";
         var qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: url,
-        width: 384,
-        height: 384,
-        colorDark : "#f1f2f1",
-        colorLight : "#1B1D1F",
-        correctLevel : QRCode.CorrectLevel.H // Error correction level (L, M, Q, H)
-    });
+            text: url,
+            width: 350,
+            height: 350,
+            colorDark : "#f1f2f1",
+            colorLight : "#1B1D1F",
+            correctLevel : QRCode.CorrectLevel.H // Error correction level (L, M, Q, H)
+        });
     }
 
-    
+    //#endregion
 
     //#region THREEjs Background
 
@@ -279,24 +879,55 @@
     group.rotation.z = THREE.MathUtils.degToRad(-15);
     group.rotation.x = THREE.MathUtils.degToRad(-50);
 
+    const clock = new THREE.Clock();
+
     function animate() {
-        sphere.rotation.y += 0.0005;
+        sphere.rotation.y += (0.05 * clock.getDelta());
         wireframe.rotation.y = sphere.rotation.y;
         renderer.render( scene, camera );
     }
     renderer.setAnimationLoop( animate );
 
     function onWindowResize() {
-        // 1. Update the camera's aspect ratio
         camera.aspect = window.innerWidth / window.innerHeight;
-        // 2. Update the camera's projection matrix to apply the change
         camera.updateProjectionMatrix();
 
-        // 3. Update the renderer's size
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
     window.addEventListener('resize', onWindowResize, false);
+
+    //#endregion
+
+    //#region Sidenav
+
+    document.body.addEventListener("click", (event) => {
+        if(event.target.id == "sidenav")
+            return;
+        if(event.target.id == "sidenav-open")
+            return;
+        if(event.target.closest('.sidenav-open'))
+            return;
+        if(event.target.closest('.sidenav'))
+            return;
+
+        closeSideNav();
+    });
+
+    // var screenSize = document.createElement("a");
+    // screenSize.innerHTML = window.innerWidth + ":" + window.innerHeight;
+    // document.getElementById("sidenav").appendChild(screenSize);
+    
+    function openSideNav() {
+        document.getElementById("sidenav").style.width = "400px";
+        if ((window.innerWidth / window.innerHeight) < 1) {
+            document.getElementById("sidenav").style.width = "100%";
+        }
+    }
+
+    function closeSideNav() {
+        document.getElementById("sidenav").style.width = "0px";
+    }
 
     //#endregion
 
