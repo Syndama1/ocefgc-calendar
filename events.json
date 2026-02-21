@@ -1,57 +1,572 @@
 [
   {
-    "name": "RMIT Games Day 27",
-    "date": "TBD",
-    "state": "VIC",
-    "location": "RMIT City Campus, Building 18",
-    "fee": {
-        "cost": 5,
-        "notes": "Free for RMIT Students"
-    },
-    "signupLink": "start.gg/tournament/rmit-games-day-26/details"
-  },
-  {
-    "name": "The Game Expo",
-    "date": "March 14th - 15th",
-    "state": "VIC",
-    "location": "Melbourne Convention and Exhibition Centre",
-    "fee": {
-        "cost": 47.43,
-        "notes": "Single Day Price"
-    },
-    "signupLink": "start.gg/tournament/the-game-expo-2026-fgc-fighting-games-tournament/details"
-  },
-  {
-    "name": "The Wild West",
-    "date": "March 27th - 29th",
-    "state": "WA",
-    "location": "Escape Portal Esports Lounge",
-    "fee": {
-        "cost": 10,
-        "notes": "Single Day Price"
-    },
-    "signupLink": "start.gg/tournament/the-wild-west-2026/details"
-  },
-  {
-    "name": "York Street Battles 115",
-    "date": "TBD",
+    "show": true,
+    "name": "York Street Battles 114",
+    "abbreviation": "YSB",
+    "date": 207,
+    "duration": 1,
     "state": "NSW",
     "location": "Bankstown Sportsclub",
     "fee": {
-        "cost": 5,
-        "notes": ""
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
     },
-    "signupLink": "start.gg/ysb"
+    "signupLink": "start.gg/ysb114",
+    "major": false
   },
   {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 214,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "MegaLAN 2026: Armageddon",
+    "abbreviation": "",
+    "date": 221,
+    "duration": 2,
+    "state": "NSW",
+    "location": "Tyree Energy Technologies Building",
+    "fee": {
+      "cost": 10,
+      "notes": "Single Day Price, Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/tournament/megalan-2026-armageddon/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "RMIT Games Day 27",
+    "abbreviation": "",
+    "date": 222,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "*Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 228,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 115",
+    "abbreviation": "YSB",
+    "date": 307,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb115",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 314,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "The Game Expo 2026",
+    "abbreviation": "TGX",
+    "date": 314,
+    "duration": 2,
+    "state": "VIC",
+    "location": "Melbourne Convention and Exhibition Centre",
+    "fee": {
+      "cost": 47.43,
+      "notes": "Single Day Price"
+    },
+    "signupLink": "start.gg/tournament/the-game-expo-2026-fgc-fighting-games-tournament/details",
+    "major": true
+  },
+  {
+    "show": true,
+    "name": "The Wild West",
+    "abbreviation": "WW",
+    "date": 327,
+    "duration": 3,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Single Day Price, Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/tournament/the-wild-west-2026/details",
+    "major": true
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 328,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 411,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 116",
+    "abbreviation": "YSB",
+    "date": 411,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 425,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 509,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 117",
+    "abbreviation": "YSB",
+    "date": 509,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 523,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
     "name": "Battle Arena Melbourne 16",
-    "date": "May 29th - 31st, 2026",
+    "abbreviation": "BAM",
+    "date": 529,
+    "duration": 3,
     "state": "VIC",
     "location": "Bundha Sports Centre",
     "fee": {
-        "cost": 60,
-        "notes": "Early Bird Price Until April 4th"
+      "cost": 60,
+      "notes": "Early Bird Price Until April 4th"
     },
-    "signupLink": "start.gg/bam16"
+    "signupLink": "start.gg/bam16",
+    "major": true
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 613,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 117",
+    "abbreviation": "YSB",
+    "date": 613,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 627,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 711,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 118",
+    "abbreviation": "YSB",
+    "date": 711,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 725,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 808,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 119",
+    "abbreviation": "YSB",
+    "date": 808,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 822,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 912,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 120",
+    "abbreviation": "YSB",
+    "date": 912,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 926,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 1010,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 121",
+    "abbreviation": "YSB",
+    "date": 1010,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 1024,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 1114,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 122",
+    "abbreviation": "YSB",
+    "date": 1114,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 1128,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "End of Year CCH",
+    "abbreviation": "",
+    "date": 1212,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "York Street Battles 123",
+    "abbreviation": "YSB",
+    "date": 1212,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Bankstown Sportsclub",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "name": "The Iron Crown 30",
+    "abbreviation": "",
+    "date": 222,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": ""
+    },
+    "signupLink": "start.gg/tournament/the-iron-crown-30/details",
+    "major": false
   }
 ]
