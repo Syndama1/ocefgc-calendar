@@ -1,2 +1,2 @@
 # OCEFGC Calendar
-Web interface showing all the locals and events 2XKO is present at in OCE.
+Web interface showing (ideally) all the locals and events in OCE.
