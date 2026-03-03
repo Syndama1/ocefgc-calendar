@@ -87,28 +87,12 @@
     "date": 207,
     "duration": 1,
     "state": "NSW",
-    "location": "Club York ",
+    "location": "Club York",
     "fee": {
       "cost": 20,
       "notes": "Game Entry Fees Separate"
     },
     "signupLink": "start.gg/ysb114",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Burning Knuckle 15",
-    "abbreviation": "",
-    "date": 214,
-    "duration": 1,
-    "state": "ACT",
-    "location": "Marie Reay Teaching Centre, ANU",
-    "fee": {
-      "cost": 10,
-      "notes": "$5 discount for ANUFGC members"
-    },
-    "signupLink": "start.gg/tournament/burning-knuckle-15/details",
     "major": false
   },
   {
@@ -125,6 +109,22 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Burning Knuckle 15",
+    "abbreviation": "",
+    "date": 214,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/burning-knuckle-15/details",
     "major": false
   },
   {
@@ -161,22 +161,6 @@
   },
   {
     "show": true,
-    "region": "NZ",
-    "name": "Auckland Ranbats 2026 Round 1",
-    "abbreviation": "",
-    "date": 221,
-    "duration": 1,
-    "state": "AKL",
-    "location": "Small Rave",
-    "fee": {
-      "cost": 15,
-      "notes": ""
-    },
-    "signupLink": "start.gg/tournament/auckland-ranbats-2026-round-1/details",
-    "major": false
-  },
-  {
-    "show": true,
     "region": "AUS",
     "name": "Dancing Blade 62",
     "abbreviation": "",
@@ -189,6 +173,22 @@
       "notes": "$5 discount for ANUFGC members"
     },
     "signupLink": "start.gg/tournament/dancing-blade-62/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "NZ",
+    "name": "Auckland Ranbats 2026 Round 1",
+    "abbreviation": "",
+    "date": 221,
+    "duration": 1,
+    "state": "AKL",
+    "location": "Small Rave",
+    "fee": {
+      "cost": 15,
+      "notes": ""
+    },
+    "signupLink": "start.gg/tournament/auckland-ranbats-2026-round-1/details",
     "major": false
   },
   {
@@ -210,22 +210,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "RMIT Games Day 27",
-    "abbreviation": "",
-    "date": 222,
-    "duration": 1,
-    "state": "VIC",
-    "location": "RMIT City Campus, Building 28",
-    "fee": {
-      "cost": 15,
-      "notes": "*Free for RMIT Students"
-    },
-    "signupLink": "start.gg/rmit",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "The Iron Crown 30",
     "abbreviation": "",
     "date": 222,
@@ -237,6 +221,22 @@
       "notes": ""
     },
     "signupLink": "start.gg/tournament/the-iron-crown-30/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "RMIT Games Day 27",
+    "abbreviation": "",
+    "date": 222,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "*Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
     "major": false
   },
   {
@@ -279,7 +279,7 @@
     "date": 307,
     "duration": 1,
     "state": "NSW",
-    "location": "Club York ",
+    "location": "Club York",
     "fee": {
       "cost": 20,
       "notes": "Game Entry Fees Separate"
@@ -386,6 +386,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 116",
+    "abbreviation": "YSB",
+    "date": 411,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb116",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 411,
@@ -397,22 +413,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 116",
-    "abbreviation": "YSB",
-    "date": 411,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb116",
     "major": false
   },
   {
@@ -466,6 +466,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 117",
+    "abbreviation": "YSB",
+    "date": 509,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb117",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 509,
@@ -477,22 +493,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 117",
-    "abbreviation": "YSB",
-    "date": 509,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb117",
     "major": false
   },
   {
@@ -562,6 +562,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 118",
+    "abbreviation": "YSB",
+    "date": 613,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb118",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 613,
@@ -573,22 +589,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 118",
-    "abbreviation": "YSB",
-    "date": 613,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb118",
     "major": false
   },
   {
@@ -674,6 +674,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 119",
+    "abbreviation": "YSB",
+    "date": 711,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb119",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 711,
@@ -685,22 +701,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 119",
-    "abbreviation": "YSB",
-    "date": 711,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb119",
     "major": false
   },
   {
@@ -754,6 +754,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 120",
+    "abbreviation": "YSB",
+    "date": 808,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb120",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 808,
@@ -765,22 +781,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 120",
-    "abbreviation": "YSB",
-    "date": 808,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb120",
     "major": false
   },
   {
@@ -834,6 +834,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 121",
+    "abbreviation": "YSB",
+    "date": 912,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb121",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 912,
@@ -845,22 +861,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 121",
-    "abbreviation": "YSB",
-    "date": 912,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb121",
     "major": false
   },
   {
@@ -914,6 +914,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 122",
+    "abbreviation": "YSB",
+    "date": 1010,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb122",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 1010,
@@ -925,22 +941,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 122",
-    "abbreviation": "YSB",
-    "date": 1010,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb122",
     "major": false
   },
   {
@@ -1010,6 +1010,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 123",
+    "abbreviation": "YSB",
+    "date": 1114,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb123",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "CCH",
     "abbreviation": "",
     "date": 1114,
@@ -1021,22 +1037,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 123",
-    "abbreviation": "YSB",
-    "date": 1114,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb123",
     "major": false
   },
   {
@@ -1090,6 +1090,22 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "York Street Battles 124",
+    "abbreviation": "YSB",
+    "date": 1212,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "End of Year CCH",
     "abbreviation": "",
     "date": 1212,
@@ -1101,22 +1117,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 124",
-    "abbreviation": "YSB",
-    "date": 1212,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York ",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "",
     "major": false
   }
 ]
