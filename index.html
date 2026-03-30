@@ -202,7 +202,7 @@
         padding-top: 60px; 
         transition: 0.5s; 
         overflow-y: scroll;
-        scrollbar-width: none;
+        height: 100vh;
     }
 
     .sidenav-open {
@@ -221,6 +221,8 @@
 
         body .sidenav {
             padding-top: 120px;
+            padding-bottom: 120px;
+            height: 80vh;
         }
 
         body .sidenav .closebtn {
@@ -240,7 +242,7 @@
         body button.dropbtn {
             font-size: 50px;
             padding-left: 0px;
-            overflow-y: visible;
+            height: 66px;
         }
     }
 
@@ -339,12 +341,15 @@
             font-size: 40px;
             max-width: calc(attr(data-width px) * 160);
             max-height: 100px;
+            border-width: 3px;
         }
 
         .timeline .day {
             width: 160px;
             height: 160px;
             font-size: 80px;
+            border: solid #0f1011 12px;
+            border-left: 0px;
         }
 
         .timeline .day .day-name {
