@@ -2,7 +2,7 @@
     <title></title>
     <meta content="OCEFGC Calendar" property="og:title" />
     <meta content="Site Description" property="og:description" />
-    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    <meta content="#cdf564" data-react-helmet="true" name="theme-color" />
     <meta content="500" property="og:width">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
 </head>
@@ -74,9 +74,9 @@
         <div></div>
     </div>
 
-    <div class="timeline desktop-only" id="timeline"></div>
+    <div class="timeline" id="timeline"></div>
 
-    <div class="month-indicator desktop-only" id="month-indicator"></div>
+    <div class="month-indicator" id="month-indicator"></div>
 
     <canvas id="canvas" style="position: fixed; top: 0; left: 0; z-index: -5;"></canvas>
 </body>
@@ -125,6 +125,12 @@
         }
     }
 
+    @media screen and (aspect-ratio > 4/3) {
+        div.mobile-only {
+            display: none;
+        }
+    }
+
     .hide {
         opacity: 0; 
     }
@@ -150,7 +156,7 @@
         transition: 0.3s;
     }
 
-    .dropbtn:hover {
+    .dropbtn:hover:not(:focus) {
         color: #3b3e41;
         margin-left: 10px;
     }
@@ -176,7 +182,7 @@
         text-align: right;
     }
 
-    .dropdown-content > a:hover {
+    .dropdown-content > a:hover:not(:focus) {
         margin-right: 10px;
     }
 
@@ -202,6 +208,37 @@
         left: 40px;
         top: 40px;
         cursor: pointer;
+    }
+
+    @media screen and (aspect-ratio <= 4/3) {
+        #sidenav-open > div {
+            width: 70;
+            height: 10px;
+            margin: 12px 0;
+        }
+
+        body .sidenav {
+            padding-top: 120px;
+        }
+
+        body .sidenav .closebtn {
+            font-size: 160px;
+        }
+
+        body .sidenav a, body .sidenav div {
+            font-size: 50px;
+            height: fit-content;
+            padding: 16px 32px;
+        }
+
+        body #dropdown.dropdown {
+            min-height: 66px;
+        }
+
+        body button.dropbtn {
+            font-size: 50px;
+            padding-left: 0px;
+        }
     }
 
     .sidenav-open > div {
@@ -236,7 +273,7 @@
         cursor: pointer;
     }
 
-    .sidenav a:hover {
+    .sidenav a:hover:not(:focus) {
         color: #3b3e41;
         margin-left: 10px;
     }
@@ -253,7 +290,7 @@
         bottom: 0; 
         font-family: 'Shapiro 95 Super Extd'; 
         z-index: -1; 
-        color: #0f1011; 
+        color: #000001; 
         opacity: 0.8; 
         left: 50%; 
         transform: translateX(-50%);
@@ -269,6 +306,52 @@
         justify-content: center;
         width: 100vw;
         transition: opacity 0.1s ease-in-out;
+    }
+
+    .timeline.desktop-only .day .day-name {
+        font-size: clamp(8px, 0.75vw, 12px);
+    }
+
+    @media screen and (aspect-ratio <= 4/3) {
+
+        .month-indicator {
+            writing-mode: vertical-lr;
+            transform: translateY(-50%);
+            height: fit-content;
+            left: 0px;
+            top: 45vh;
+            font-size: clamp(0px, 10vh, 150px);
+            max-width: none;
+        }
+
+        .timeline {
+            max-width: 400vw;
+            height: 35vh;
+            overflow-x: scroll;
+            justify-content: stretch;
+        }
+
+        .timeline .timeline-event {
+            height: 90px;
+            font-size: 40px;
+            max-width: calc(attr(data-width px) * 160);
+            max-height: 100px;
+        }
+
+        .timeline .day {
+            width: 160px;
+            height: 160px;
+            font-size: 80px;
+        }
+
+        .timeline .day .day-name {
+            font-size: 40px;
+        }
+
+        .timeline .blank {
+            height: 90px;
+        }
+
     }
     
     .day-container {
@@ -296,6 +379,10 @@
         margin-top: 2px;
     }
 
+    .day > div {
+        font-size: clamp(8px, 0.75vw, 12px);
+    }
+
     .day.first {
         border-left: solid #0f1011 4px;
     }
@@ -304,7 +391,7 @@
         color: #f1f2f1;
     }
 
-    .timeline-event:hover {
+    .timeline-event:hover:not(:focus) {
         transform: scale(120%) translateX(-3px);
         cursor: pointer;
     }
@@ -325,6 +412,8 @@
         transform: translateX(-3px);
         transition: transform 0.1s ease-in-out; 
         font-size: clamp(7px, 0.75vw, 13px);
+
+        max-width: calc(attr(data-width vw) * 3);
     }
 
     .blank {
@@ -374,9 +463,9 @@
     }
 
     .SA {
-        background-color: #2be39633;
-        color: #2be396;
-        border-color: #2be396;
+        background-color: #be2be333;
+        color: #be2be3;
+        border-color: #be2be3;
     }
 
     .VIC {
@@ -508,6 +597,8 @@
         font-family: 'Shapiro 95 Super Extd';
         font-size: 64px;
         padding-left: 100px;
+        overflow: visible;
+        direction: rtl;
     }
 
     .event-body {
@@ -603,11 +694,16 @@
     var currentDropdown;
 
     function OpenDropdown(dropdownID) {
-        if(document.getElementById(dropdownID).parentElement.style.height == "560px") {
+        if ((window.innerWidth / window.innerHeight) < 4/3) {
+            var monthPickDropdownHeight = "1066px";
+        } else {
+            var monthPickDropdownHeight = "560px";
+        }
+        if(document.getElementById(dropdownID).parentElement.style.height == monthPickDropdownHeight) {
             return;
         }
         document.getElementById(dropdownID).classList.toggle("show-dropdown");
-        document.getElementById(dropdownID).parentElement.style.height = "560px";
+        document.getElementById(dropdownID).parentElement.style.height = monthPickDropdownHeight;
         currentDropdown = dropdownID;
     }
 
@@ -622,7 +718,7 @@
                 }                
             }
             var dropdowns = document.getElementsByClassName("show-dropdown");
-            if (dropdowns.length == 0) {
+            if (dropdowns.length == 0 && currentDropdown != null) {
                 document.getElementById(currentDropdown).parentElement.style.height = "0px";
             }
         }
@@ -684,20 +780,24 @@
     }
 
     var displayedMonth = 0;
+    var mobileTimeline;
 
     function UpdateTimeline(month) {
         // var currentMonth = [];
         var timelineDOM = document.getElementById("timeline");
-        
+        if(mobileTimeline != null) {
+            mobileTimeline.remove;
+        }
+
         if (month == displayedMonth) { return; }
 
         timelineDOM.style.opacity = 0;
         document.getElementById("month-indicator").style.opacity = 0;
+        document.title = months[month - 1] + " - OCEFGC Calendar";
 
         setTimeout(() => {
 
             document.getElementById("month-indicator").innerHTML = months[month - 1];
-            document.title = months[month - 1] + " - OCEFGC Calendar";
 
             timelineDOM.innerHTML = "";
 
@@ -716,7 +816,7 @@
                 }
 
                 var dayOfTheWeek = new Date(today.getFullYear(), month - 1, i).getDay();
-                newDayContentDOM.innerHTML = i + 1 + "<div style='font-size: clamp(8px, 0.75vw, 12px);'>" + daysOfWeek[dayOfTheWeek] + "</div>";
+                newDayContentDOM.innerHTML = i + 1 + "<div class='day-name'>" + daysOfWeek[dayOfTheWeek] + "</div>";
                 newDayDOM.appendChild(newDayContentDOM);
                 timelineDOM.appendChild(newDayDOM);
             }
@@ -733,8 +833,8 @@
                     eventTimelineElement.classList.add(event.state);
                     eventTimelineElement.id = event.name + event.date;
                     eventTimelineElement.innerHTML = event.state;
+                    eventTimelineElement.setAttribute('data-width', event.duration);
                     if(event.duration > 1) {
-                        eventTimelineElement.style = "max-width: " + (event.duration * 3) + "vw;";
 
                         for (i = 1; i < event.duration; i++) {
                             var blankDay = document.createElement('button');
@@ -750,6 +850,7 @@
 
             displayedMonth = month;
             timelineDOM.style.opacity = 1;
+            timelineDOM.scrollLeft = 0;
             document.getElementById("month-indicator").style.opacity = 1;
 
         }, 100);
@@ -913,7 +1014,7 @@
     
     function openSideNav() {
         document.getElementById("sidenav").style.width = "400px";
-        if ((window.innerWidth / window.innerHeight) < 1) {
+        if ((window.innerWidth / window.innerHeight) < 4/3) {
             document.getElementById("sidenav").style.width = "100%";
         }
     }
