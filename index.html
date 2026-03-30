@@ -203,6 +203,7 @@
         transition: 0.5s; 
         overflow-y: scroll;
         height: 100vh;
+        scrollbar-width: none;
     }
 
     .sidenav-open {
@@ -223,6 +224,7 @@
             padding-top: 120px;
             padding-bottom: 120px;
             height: 80vh;
+            scrollbar-width: thin;
         }
 
         body .sidenav .closebtn {
@@ -350,6 +352,12 @@
             font-size: 80px;
             border: solid #0f1011 12px;
             border-left: 0px;
+        }
+
+        .timeline .day.first {
+            font-size: 80px;
+            border: solid #0f1011 12px;
+            border-left: solid #0f1011 12px;
         }
 
         .timeline .day .day-name {
