@@ -1,210 +1,338 @@
 [
   {
     "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 106,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 110,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 120,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 124,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 203,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 114",
-    "abbreviation": "YSB",
-    "date": 207,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb114",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 214,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Burning Knuckle 15",
-    "abbreviation": "",
-    "date": 214,
-    "duration": 1,
-    "state": "ACT",
-    "location": "Marie Reay Teaching Centre, ANU",
-    "fee": {
-      "cost": 10,
-      "notes": "$5 discount for ANUFGC members"
-    },
-    "signupLink": "start.gg/tournament/burning-knuckle-15/details",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 217,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Fighting Spirits",
-    "abbreviation": "",
-    "date": 219,
-    "duration": 1,
-    "state": "QLD",
-    "location": "Netherworld Bar",
-    "fee": {
-      "cost": 10,
-      "notes": "18+ Venue, Parent or Legal Guardian Required for Minors"
-    },
-    "signupLink": "start.gg/tournament/fighting-spirits-netherworld-casual-fighting-games-february-2026/details",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Dancing Blade 62",
-    "abbreviation": "",
-    "date": 221,
-    "duration": 1,
-    "state": "ACT",
-    "location": "Marie Reay Teaching Centre, ANU",
-    "fee": {
-      "cost": 10,
-      "notes": "$5 discount for ANUFGC members"
-    },
-    "signupLink": "start.gg/tournament/dancing-blade-62/details",
-    "major": false
-  },
-  {
-    "show": true,
     "region": "NZ",
-    "name": "Auckland Ranbats 2026 Round 1",
+    "name": "Second Wind 2026",
     "abbreviation": "",
-    "date": 221,
-    "duration": 1,
-    "state": "AKL",
-    "location": "Small Rave",
+    "date": 710,
+    "duration": 3,
+    "state": "WLG",
+    "location": "Rutherford House, VUW",
     "fee": {
-      "cost": 15,
-      "notes": ""
+      "cost": 60,
+      "notes": "$40 Early Bird price until April 30th, $50 Student Price, $80 Late Price starts July 4th"
     },
-    "signupLink": "start.gg/tournament/auckland-ranbats-2026-round-1/details",
+    "signupLink": "start.gg/sw26",
+    "major": true
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 306,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
     "major": false
   },
   {
     "show": true,
     "region": "AUS",
-    "name": "MegaLAN 2026: Armageddon",
+    "name": "Friday Fight Nights",
     "abbreviation": "",
-    "date": 221,
-    "duration": 2,
-    "state": "NSW",
-    "location": "Tyree Energy Technologies Building",
+    "date": 313,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
     "fee": {
       "cost": 10,
-      "notes": "Single Day Price, Game Entry Fees Separate"
+      "notes": "Check the discord for potential tournaments"
     },
-    "signupLink": "start.gg/tournament/megalan-2026-armageddon/details",
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 320,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 410,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 417,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 424,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 501,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 508,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 515,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 522,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 529,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 605,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 612,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 619,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 626,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 703,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 710,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 717,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 724,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Friday Fight Nights",
+    "abbreviation": "",
+    "date": 731,
+    "duration": 1,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Check the discord for potential tournaments"
+    },
+    "signupLink": "discord.gg/fggjQdZ8N4",
     "major": false
   },
   {
@@ -226,17 +354,49 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "RMIT Games Day 27",
+    "name": "The Wild West",
+    "abbreviation": "WW",
+    "date": 327,
+    "duration": 3,
+    "state": "WA",
+    "location": "Escape Portal Esports Lounge",
+    "fee": {
+      "cost": 10,
+      "notes": "Single Day Price, Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/tournament/the-wild-west-2026/details",
+    "major": true
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Battle Arena Melbourne 16",
+    "abbreviation": "BAM",
+    "date": 710,
+    "duration": 3,
+    "state": "VIC",
+    "location": "Bundha Sports Centre",
+    "fee": {
+      "cost": 70,
+      "notes": "$80 Late Price starts June 28th"
+    },
+    "signupLink": "start.gg/bam16",
+    "major": true
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Big CCH",
     "abbreviation": "",
-    "date": 222,
+    "date": 124,
     "duration": 1,
     "state": "VIC",
-    "location": "RMIT City Campus, Building 28",
+    "location": "Collingwood Djerring Centre",
     "fee": {
-      "cost": 15,
-      "notes": "*Free for RMIT Students"
+      "cost": 5,
+      "notes": "Free if you BYOC"
     },
-    "signupLink": "start.gg/rmit",
+    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -258,102 +418,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 303,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 115",
-    "abbreviation": "YSB",
-    "date": 307,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb115",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 314,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "The Game Expo 2026",
-    "abbreviation": "TGX",
-    "date": 314,
-    "duration": 2,
-    "state": "VIC",
-    "location": "Melbourne Convention and Exhibition Centre",
-    "fee": {
-      "cost": 47.43,
-      "notes": "Single Day Price"
-    },
-    "signupLink": "start.gg/tournament/the-game-expo-2026-fgc-fighting-games-tournament/details",
-    "major": true
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 317,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "The Wild West",
-    "abbreviation": "WW",
-    "date": 327,
-    "duration": 3,
-    "state": "WA",
-    "location": "Escape Portal Esports Lounge",
-    "fee": {
-      "cost": 10,
-      "notes": "Single Day Price, Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/tournament/the-wild-west-2026/details",
-    "major": true
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Big CCH",
     "abbreviation": "",
     "date": 328,
@@ -365,70 +429,6 @@
       "notes": "Free if you BYOC"
     },
     "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 331,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": true
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 116",
-    "abbreviation": "YSB",
-    "date": 411,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb116",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 411,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Pixel Plug & Play",
-    "abbreviation": "",
-    "date": 414,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Pixel Bar & Cafe",
-    "fee": {
-      "cost": 0,
-      "notes": ""
-    },
-    "signupLink": "",
     "major": false
   },
   {
@@ -450,33 +450,177 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "Pixel Plug & Play",
+    "name": "Big CCH",
     "abbreviation": "",
-    "date": 428,
+    "date": 523,
     "duration": 1,
     "state": "VIC",
-    "location": "Pixel Bar & Cafe",
+    "location": "Collingwood Djerring Centre",
     "fee": {
-      "cost": 0,
-      "notes": ""
+      "cost": 5,
+      "notes": "Free if you BYOC"
     },
-    "signupLink": "",
+    "signupLink": "cchfgc.org",
     "major": false
   },
   {
     "show": true,
     "region": "AUS",
-    "name": "York Street Battles 117",
-    "abbreviation": "YSB",
-    "date": 509,
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 627,
     "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
     "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
+      "cost": 5,
+      "notes": "Free if you BYOC"
     },
-    "signupLink": "start.gg/ysb117",
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 725,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 822,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 926,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 1024,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "start.gg/ysb124",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Big CCH",
+    "abbreviation": "",
+    "date": 1128,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 110,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 214,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 314,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 411,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -498,9 +642,217 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 613,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 711,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 808,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 912,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 1010,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "CCH",
+    "abbreviation": "",
+    "date": 1114,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Library",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "End of Year CCH",
+    "abbreviation": "",
+    "date": 1212,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Collingwood Djerring Centre",
+    "fee": {
+      "cost": 5,
+      "notes": "Free if you BYOC"
+    },
+    "signupLink": "cchfgc.org",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
-    "date": 512,
+    "date": 106,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 120,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 203,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 217,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 303,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 317,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 331,
     "duration": 1,
     "state": "VIC",
     "location": "Pixel Bar & Cafe",
@@ -514,18 +866,50 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "Big CCH",
+    "name": "Pixel Plug & Play",
     "abbreviation": "",
-    "date": 523,
+    "date": 414,
     "duration": 1,
     "state": "VIC",
-    "location": "Collingwood Djerring Centre",
+    "location": "Pixel Bar & Cafe",
     "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
+      "cost": 0,
+      "notes": ""
     },
-    "signupLink": "cchfgc.org",
+    "signupLink": "",
     "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 428,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Pixel Plug & Play",
+    "abbreviation": "",
+    "date": 512,
+    "duration": 1,
+    "state": "VIC",
+    "location": "Pixel Bar & Cafe",
+    "fee": {
+      "cost": 0,
+      "notes": ""
+    },
+    "signupLink": "",
+    "major": true
   },
   {
     "show": true,
@@ -562,38 +946,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "York Street Battles 118",
-    "abbreviation": "YSB",
-    "date": 613,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb118",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 613,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
     "date": 623,
@@ -605,22 +957,6 @@
       "notes": ""
     },
     "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 627,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -642,70 +978,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "Battle Arena Melbourne 16",
-    "abbreviation": "BAM",
-    "date": 710,
-    "duration": 3,
-    "state": "VIC",
-    "location": "Bundha Sports Centre",
-    "fee": {
-      "cost": 60,
-      "notes": "Early Bird Price Until April 4th"
-    },
-    "signupLink": "start.gg/bam16",
-    "major": true
-  },
-  {
-    "show": true,
-    "region": "NZ",
-    "name": "Second Wind 2026",
-    "abbreviation": "",
-    "date": 710,
-    "duration": 3,
-    "state": "WLG",
-    "location": "Respawn Esports Centre",
-    "fee": {
-      "cost": -1,
-      "notes": ""
-    },
-    "signupLink": "",
-    "major": true
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "York Street Battles 119",
-    "abbreviation": "YSB",
-    "date": 711,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb119",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 711,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
     "date": 721,
@@ -717,22 +989,6 @@
       "notes": ""
     },
     "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 725,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -754,38 +1010,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "York Street Battles 120",
-    "abbreviation": "YSB",
-    "date": 808,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb120",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 808,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
     "date": 818,
@@ -797,22 +1021,6 @@
       "notes": ""
     },
     "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 822,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -834,38 +1042,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "York Street Battles 121",
-    "abbreviation": "YSB",
-    "date": 912,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb121",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 912,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
     "date": 915,
@@ -877,22 +1053,6 @@
       "notes": ""
     },
     "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 926,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -914,38 +1074,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "York Street Battles 122",
-    "abbreviation": "YSB",
-    "date": 1010,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb122",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 1010,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
     "date": 1013,
@@ -957,22 +1085,6 @@
       "notes": ""
     },
     "signupLink": "",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 1024,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "start.gg/ysb124",
     "major": false
   },
   {
@@ -1010,38 +1122,6 @@
   {
     "show": true,
     "region": "AUS",
-    "name": "York Street Battles 123",
-    "abbreviation": "YSB",
-    "date": 1114,
-    "duration": 1,
-    "state": "NSW",
-    "location": "Club York",
-    "fee": {
-      "cost": 20,
-      "notes": "Game Entry Fees Separate"
-    },
-    "signupLink": "start.gg/ysb123",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "CCH",
-    "abbreviation": "",
-    "date": 1114,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Library",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
     "name": "Pixel Plug & Play",
     "abbreviation": "",
     "date": 1124,
@@ -1053,22 +1133,6 @@
       "notes": ""
     },
     "signupLink": "start.gg/ysb124",
-    "major": false
-  },
-  {
-    "show": true,
-    "region": "AUS",
-    "name": "Big CCH",
-    "abbreviation": "",
-    "date": 1128,
-    "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
-    "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
-    },
-    "signupLink": "cchfgc.org",
     "major": false
   },
   {
@@ -1090,6 +1154,822 @@
   {
     "show": true,
     "region": "AUS",
+    "name": "RMIT Games Day 27",
+    "abbreviation": "",
+    "date": 222,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "RMIT Games Day 28",
+    "abbreviation": "",
+    "date": 322,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "RMIT Games Day 29",
+    "abbreviation": "",
+    "date": 426,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "RMIT Games Day 30",
+    "abbreviation": "",
+    "date": 524,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "RMIT Games Day 31",
+    "abbreviation": "",
+    "date": 628,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "RMIT Games Day 32",
+    "abbreviation": "",
+    "date": 726,
+    "duration": 1,
+    "state": "VIC",
+    "location": "RMIT City Campus, Building 28",
+    "fee": {
+      "cost": 15,
+      "notes": "Free for RMIT Students"
+    },
+    "signupLink": "start.gg/rmit",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "The Game Expo 2026",
+    "abbreviation": "TGX",
+    "date": 314,
+    "duration": 2,
+    "state": "VIC",
+    "location": "Melbourne Convention and Exhibition Centre",
+    "fee": {
+      "cost": 47.43,
+      "notes": "Single Day Price"
+    },
+    "signupLink": "start.gg/tournament/the-game-expo-2026-fgc-fighting-games-tournament/details",
+    "major": true
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "ASCND//33",
+    "abbreviation": "",
+    "date": 214,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Team Bliss Esports",
+    "fee": {
+      "cost": 7.50,
+      "notes": ""
+    },
+    "signupLink": "start.gg/ascnd",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "ASCND//34",
+    "abbreviation": "",
+    "date": 314,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Team Bliss Esports",
+    "fee": {
+      "cost": 7.50,
+      "notes": ""
+    },
+    "signupLink": "start.gg/ascnd",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "ASCND//35",
+    "abbreviation": "",
+    "date": 411,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Team Bliss Esports",
+    "fee": {
+      "cost": 7.50,
+      "notes": ""
+    },
+    "signupLink": "start.gg/ascnd",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "ASCND//36",
+    "abbreviation": "",
+    "date": 509,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Team Bliss Esports",
+    "fee": {
+      "cost": 7.50,
+      "notes": ""
+    },
+    "signupLink": "start.gg/ascnd",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "ASCND//37",
+    "abbreviation": "",
+    "date": 613,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Team Bliss Esports",
+    "fee": {
+      "cost": 7.50,
+      "notes": ""
+    },
+    "signupLink": "start.gg/ascnd",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "ASCND//38",
+    "abbreviation": "",
+    "date": 711,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Team Bliss Esports",
+    "fee": {
+      "cost": 7.50,
+      "notes": ""
+    },
+    "signupLink": "start.gg/ascnd",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Fighting Spirits",
+    "abbreviation": "",
+    "date": 115,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Netherworld Bar",
+    "fee": {
+      "cost": 10,
+      "notes": "18+ Venue, Parent or Legal Guardian Required for Minors"
+    },
+    "signupLink": "start.gg/tournament/fightingspirits",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Fighting Spirits",
+    "abbreviation": "",
+    "date": 219,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Netherworld Bar",
+    "fee": {
+      "cost": 10,
+      "notes": "18+ Venue, Parent or Legal Guardian Required for Minors"
+    },
+    "signupLink": "start.gg/tournament/fightingspirits",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Fighting Spirits",
+    "abbreviation": "",
+    "date": 312,
+    "duration": 1,
+    "state": "QLD",
+    "location": "Netherworld Bar",
+    "fee": {
+      "cost": 10,
+      "notes": "18+ Venue, Parent or Legal Guardian Required for Minors"
+    },
+    "signupLink": "start.gg/tournament/fightingspirits",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Monthly Beercade 3rd Strike",
+    "abbreviation": "",
+    "date": 402,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Beercade Australia",
+    "fee": {
+      "cost": 0,
+      "notes": "Freeplay cabs 6PM onwards, bracket signup on the day"
+    },
+    "signupLink": "discord.gg/JMtsaNyJBq",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Monthly Beercade 3rd Strike",
+    "abbreviation": "",
+    "date": 507,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Beercade Australia",
+    "fee": {
+      "cost": 0,
+      "notes": "Freeplay cabs 6PM onwards, bracket signup on the day"
+    },
+    "signupLink": "discord.gg/JMtsaNyJBq",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Monthly Beercade 3rd Strike",
+    "abbreviation": "",
+    "date": 604,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Beercade Australia",
+    "fee": {
+      "cost": 0,
+      "notes": "Freeplay cabs 6PM onwards, bracket signup on the day"
+    },
+    "signupLink": "discord.gg/JMtsaNyJBq",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Monthly Beercade 3rd Strike",
+    "abbreviation": "",
+    "date": 702,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Beercade Australia",
+    "fee": {
+      "cost": 0,
+      "notes": "Freeplay cabs 6PM onwards, bracket signup on the day"
+    },
+    "signupLink": "discord.gg/JMtsaNyJBq",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 320,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 327,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 403,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 410,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 417,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 424,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 501,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 508,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 515,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 522,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 529,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 605,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 612,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 619,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 626,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 703,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 710,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 717,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 724,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Super Barista Bros FGC Friday",
+    "abbreviation": "SBB",
+    "date": 731,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Cornerstone Cafe UTS",
+    "fee": {
+      "cost": 15,
+      "notes": "$10 discount if you have entered another SSB event the same week"
+    },
+    "signupLink": "start.gg/tournament/super-barista-bros-fgc-fridays-weekly/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "MegaLAN 2026: Armageddon",
+    "abbreviation": "",
+    "date": 221,
+    "duration": 2,
+    "state": "NSW",
+    "location": "Tyree Energy Technologies Building",
+    "fee": {
+      "cost": 10,
+      "notes": "Single Day Price, Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/tournament/megalan-2026-armageddon/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 114",
+    "abbreviation": "YSB",
+    "date": 207,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb114",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 115",
+    "abbreviation": "YSB",
+    "date": 307,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb115",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 116",
+    "abbreviation": "YSB",
+    "date": 411,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb116",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 117",
+    "abbreviation": "YSB",
+    "date": 509,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb117",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 118",
+    "abbreviation": "YSB",
+    "date": 613,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb118",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 119",
+    "abbreviation": "YSB",
+    "date": 711,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb119",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 120",
+    "abbreviation": "YSB",
+    "date": 808,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb120",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 121",
+    "abbreviation": "YSB",
+    "date": 912,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb121",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 122",
+    "abbreviation": "YSB",
+    "date": 1010,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb122",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "York Street Battles 123",
+    "abbreviation": "YSB",
+    "date": 1114,
+    "duration": 1,
+    "state": "NSW",
+    "location": "Club York",
+    "fee": {
+      "cost": 20,
+      "notes": "Game Entry Fees Separate"
+    },
+    "signupLink": "start.gg/ysb123",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
     "name": "York Street Battles 124",
     "abbreviation": "YSB",
     "date": 1212,
@@ -1100,23 +1980,231 @@
       "cost": 20,
       "notes": "Game Entry Fees Separate"
     },
-    "signupLink": "",
+    "signupLink": "start.gg/ysb124",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "NZ",
+    "name": "Otautahi Onslaught 2026",
+    "abbreviation": "",
+    "date": 508,
+    "duration": 3,
+    "state": "CHR",
+    "location": "Woolston Tannery's Met Lounge",
+    "fee": {
+      "cost": 45,
+      "notes": "Game Entry Fees Separate, 18+ Venue"
+    },
+    "signupLink": "start.gg/oo26",
+    "major": true
+  },
+  {
+    "show": true,
+    "region": "NZ",
+    "name": "Auckland Ranbats 2026 Round 1",
+    "abbreviation": "",
+    "date": 221,
+    "duration": 1,
+    "state": "AKL",
+    "location": "Small Rave",
+    "fee": {
+      "cost": 15,
+      "notes": ""
+    },
+    "signupLink": "start.gg/tournament/auckland-ranbats-2026-round-1/details",
     "major": false
   },
   {
     "show": true,
     "region": "AUS",
-    "name": "End of Year CCH",
+    "name": "Burning Knuckle 15",
     "abbreviation": "",
-    "date": 1212,
+    "date": 214,
     "duration": 1,
-    "state": "VIC",
-    "location": "Collingwood Djerring Centre",
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
     "fee": {
-      "cost": 5,
-      "notes": "Free if you BYOC"
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
     },
-    "signupLink": "cchfgc.org",
+    "signupLink": "start.gg/tournament/burning-knuckle-15/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Burning Knuckle 16",
+    "abbreviation": "",
+    "date": 307,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/burning-knuckle-16/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Burning Knuckle 17",
+    "abbreviation": "",
+    "date": 404,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/burning-knuckle-17/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Burning Knuckle 18",
+    "abbreviation": "",
+    "date": 502,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/burning-knuckle-18/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Burning Knuckle 19",
+    "abbreviation": "",
+    "date": 606,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/burning-knuckle-19/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Burning Knuckle 20",
+    "abbreviation": "",
+    "date": 704,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/burning-knuckle-20/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Dancing Blade 62",
+    "abbreviation": "",
+    "date": 221,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/dancing-blade-62/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Dancing Blade 63",
+    "abbreviation": "",
+    "date": 321,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/dancing-blade-63/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Dancing Blade 64",
+    "abbreviation": "",
+    "date": 418,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/dancing-blade-64/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Dancing Blade 65",
+    "abbreviation": "",
+    "date": 516,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/dancing-blade-65/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Dancing Blade 66",
+    "abbreviation": "",
+    "date": 620,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/dancing-blade-66/details",
+    "major": false
+  },
+  {
+    "show": true,
+    "region": "AUS",
+    "name": "Dancing Blade 67",
+    "abbreviation": "",
+    "date": 718,
+    "duration": 1,
+    "state": "ACT",
+    "location": "Marie Reay Teaching Centre, ANU",
+    "fee": {
+      "cost": 10,
+      "notes": "$5 discount for ANUFGC members"
+    },
+    "signupLink": "start.gg/tournament/dancing-blade-67/details",
     "major": false
   }
 ]
