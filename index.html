@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <title></title>
     <meta content="OCEFGC Calendar" property="og:title" />
@@ -215,7 +216,7 @@
 
     @media screen and (aspect-ratio <= 4/3) {
         #sidenav-open > div {
-            width: 70;
+            width: 70px;
             height: 10px;
             margin: 12px 0;
         }
@@ -333,9 +334,11 @@
 
         .timeline {
             max-width: 400vw;
-            height: 35vh;
+            height: 50vh;
             overflow-x: scroll;
             justify-content: stretch;
+            overflow-y: visible;
+            pointer-events: painted;
         }
 
         .timeline .timeline-event {
@@ -378,6 +381,7 @@
         display: flex;
         flex-direction: column-reverse;
         transform: skew(-15deg);
+        overflow-y: visible;
     }
 
     .day {
@@ -407,9 +411,26 @@
         color: #f1f2f1;
     }
 
-    .timeline-event:hover:not(:focus) {
-        transform: scale(120%) translateX(-3px);
-        cursor: pointer;
+    @media screen and (aspect-ratio <= 4/3) {
+
+        .day-container .timeline-event:hover:not(:focus) {
+            transform: scale(120%) translateX(-3px);
+            cursor: pointer;
+        }
+
+        .day-container div, .day-container button {
+            flex-shrink: 0;
+        }
+
+    }
+
+    @media screen and (aspect-ratio > 4/3) {
+
+        .timeline-event:hover {
+            transform: scale(120%) translateX(-3px);
+            cursor: pointer;
+        }
+
     }
 
     .timeline-event {
@@ -464,6 +485,12 @@
         background-color: rgba(227, 147, 43, 0.2);
         color: #e3932b;
         border-color: #e3932b;
+    }
+
+    .CHR {
+        background-color: #d42be333;
+        color: #d42be3;
+        border-color: #d42be3;
     }
 
     .NSW {
@@ -866,10 +893,11 @@
 
             displayedMonth = month;
             timelineDOM.style.opacity = 1;
-            timelineDOM.scrollLeft = 0;
+            timelineDOM.scrollLeft = 400;
             document.getElementById("month-indicator").style.opacity = 1;
 
         }, 100);
+        
     }
 
     const formatOrdinal = (n, locale = 'en-US') => {
@@ -948,7 +976,7 @@
 
         setTimeout(() => {
             document.getElementById("name").innerHTML = eventsData[currentEventIndex].name;
-            document.getElementById("location").innerHTML = eventsData[currentEventIndex].location + ", " + eventsData[currentEventIndex].state;
+            document.getElementById("location").innerHTML = eventsData[currentEventIndex].location + ", " + eventsData[currentEventIndex].state + ", " + eventsData[currentEventIndex].region;
 
             if(eventsData[currentEventIndex].date == 0)
             {
